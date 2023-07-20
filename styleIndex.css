@@ -1,0 +1,40 @@
+.logoImage {
+width: 250px;
+height: 250px;
+display: flex;
+position: relative;
+left: 550px;
+
+
+}
+header {
+    display: flex;
+    position: fixed;
+    background-color: rgba(63, 148, 205, 0.3);    
+
+}
+.HeaderImage {
+    display: flex;
+   
+}
+h1{
+font-size: 25px;
+text-align: center;
+margin-bottom: 10px;
+}
+table,th {
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+    position: static;
+    margin-left: 570px;
+}
+.HeaderImage{
+    display: flex;
+    width: 150px;
+    height: 178.6px;
+}
+footer {
+    text-align: center;
+}
