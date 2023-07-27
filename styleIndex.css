@@ -9,8 +9,11 @@ left: 550px;
 }
 header {
     display: flex;
-    position: fixed;
-    background-color: rgba(63, 148, 205, 0.3);    
+    position: sticky;
+    background-color: beige;
+    padding: 25px; 
+    justify-content: center;
+    
 
 }
 .HeaderImage {
@@ -36,5 +39,9 @@ table,th {
     height: 178.6px;
 }
 footer {
+    background-color: beige;
+    font-size: 15px;
+    padding: 25px;
+    position: flex;
     text-align: center;
 }
