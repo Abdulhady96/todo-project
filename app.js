@@ -48,3 +48,41 @@
    // Handle the case when the user chooses to skip the welcoming message
    alert('Alright, skipping the welcoming message.');
  }
+ // Function to get user input and validate it
+function getUserInput(question) {
+  const userInput = prompt(question).trim();
+  return userInput !== "" ? userInput : "invalid";
+}
+
+// Function to ask multiple questions and store answers in an array
+function askQuestions() {
+  const questions = [
+    "Do you like pizza? (Yes/No)",
+    "Have you traveled abroad? (Yes/No)",
+    "Do you enjoy reading books? (Yes/No)"
+  ];
+  const answers = [];
+
+  for (const question of questions) {
+    const answer = getUserInput(question);
+    answers.push(answer);
+  }
+
+  return answers;
+}
+
+// Function to print array items on the console
+function printArrayItems(array) {
+  for (const item of array) {
+    console.log(item);
+  }
+}
+
+// Main function to execute the program
+function main() {
+  const userAnswers = askQuestions();
+  printArrayItems(userAnswers);
+}
+
+// Calling the main function to start the program
+main();
